@@ -17,7 +17,7 @@
   
     $item->getSingleUser();
 
-    if($item->first_name != null){
+    if($item != null){
         $user_Arr = array(
             "id" =>  $item->id,
             "first_name" => $item->first_name,
