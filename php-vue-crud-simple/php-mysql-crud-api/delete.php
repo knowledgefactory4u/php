@@ -13,9 +13,7 @@
     $db = $database->getConnection();
     
     $item = new User($db);
-    
-    $data = json_decode(file_get_contents("php://input"));
-    
+       
     $item->id = isset($_GET['id']) ? $_GET['id'] : die();
     
     if($item->deleteUser()){
